@@ -1,9 +1,10 @@
-# bst are going to make inserting, deleting and sorting very fast, with O(log N) time compleity. It is predictable
-# Tress have nodes with the data and connection between the nodes.
-# root node: we have a reference to this, all other nodes can be accessed via the root node.
-# In a tree there must be only a single path from the root node to any other nodes in the tree.
-# There are parent nodes, child nodes and leaf nodes when they don't have children.
-
+"""
+ bst are going to make inserting, deleting and sorting very fast, with O(log N) time compleity. It is predictable
+ Tress have nodes with the data and connection between the nodes.
+ root node: we have a reference to this, all other nodes can be accessed via the root node.
+ In a tree there must be only a single path from the root node to any other nodes in the tree.
+ There are parent nodes, child nodes and leaf nodes when they don't have children.
+"""
 # Binary search tree:
     # They are data structures
     # Keeps the keys in sorted order, we can use binary search.
