@@ -6,15 +6,25 @@ The node has a single child.
 Or it has 2 children. We have to 2 options: look for the largest item (predecessor) in the left subtree or for the smallest item in the right subtree(successor)
 """
 
-class BSTreeNode
-
+class Node(object):
     #Constructor to create a new node
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
 
+class BST(object):
+
+    def __init__(self):
+        self.root = None
+
+    def insert(self, data):
+        if not self.root:
+            self.root = Node(data)
     
+
+
+    HEREEEEEEEEE!!!!
     def minValueNode(node):
         current = node
 
