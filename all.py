@@ -4,6 +4,7 @@ We need to think about three possible scenarios:
 The node we want to remove is a leaf nod, that means it doesn't have children.
 The node has a single child. 
 Or it has 2 children. We have to 2 options: look for the largest item (predecessor) in the left subtree or for the smallest item in the right subtree(successor)
+olakase
 """
 
 class Node(object):
