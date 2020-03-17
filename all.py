@@ -79,12 +79,12 @@ class BST(object):
                 print("Removing a leaf node")
                 del node 
                 return None
-            if not self.leftChild:
+            if not node.leftChild:
                 print("Removing node with right child")
                 tempNode = node.rightChild
                 del node
                 return tempNode
-            elif not self.rightChild:
+            elif not node.rightChild:
                 print("Removing node with a single left child")
                 tempNode = node.leftChild
                 del node
@@ -93,6 +93,8 @@ class BST(object):
     tempNode = self.getPredecessor(node.leftChild)
     node.data = tempNode.data
     leftChild = self.removeNode(tempNode.data, node.leftChild)
+
+    return node
 
     def getPredecessor(self, node):
         if node.rightChild:
@@ -153,6 +155,9 @@ class BST(object):
             root.right = delete(root.right, temp.key)
 
         return root
+
+
+            
 
 
             
